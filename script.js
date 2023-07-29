@@ -56,32 +56,34 @@ function dateBuilder (d) {
 
 
 function getGeolocation() {
-    if ('geolocation' in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-  
-        // Call the getWeatherByCoordinates function with latitude and longitude
-        getWeatherByCoordinates(latitude, longitude);
-      }, (error) => {
-        console.error('Error getting geolocation:', error);
-        alert('Could not get your location. Please try again.');
-      });
-    } else {
-      console.error('Geolocation is not available in this browser.');
-      alert('Geolocation is not available in this browser.');
-    }
-  }
-  
-  // Function to get weather data by coordinates
-  function getWeatherByCoordinates(latitude, longitude) {
-    fetch(`${api.baseurl}weather?lat=${latitude}&lon=${longitude}&units=metric&APPID=${api.key}`)
-      .then(weather => {
-        return weather.json();
-      }).then(displayResults);
-  }
-  
+  if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
 
-  window.addEventListener('load', () => {
-    getGeolocation();
-  });
+      // Call the getWeatherByCoordinates function with latitude and longitude
+      getWeatherByCoordinates(latitude, longitude);
+    }, (error) => {
+      console.error('Error getting geolocation:', error);
+      alert('Could not get your location. Please try again.');
+    });
+  } else {
+    console.error('Geolocation is not available in this browser.');
+    alert('Geolocation is not available in this browser.');
+  }
+}
+
+// Function to get weather data by coordinates
+function getWeatherByCoordinates(latitude, longitude) {
+  fetch(`${api.baseurl}weather?lat=${latitude}&lon=${longitude}&units=metric&APPID=${api.key}`)
+    .then(weather => {
+      return weather.json();
+    }).then(displayResults);
+}
+
+// ... Existing JavaScript code ...
+
+// Automatically get the user's location when the DOM content is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  getGeolocation();
+});
