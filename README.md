@@ -12,6 +12,8 @@ Features:
 
 🌐 Responsive Design: Enjoy a seamless user experience across various devices.
 
+📍 Geolocation: WeatherApp automatically provides real-time weather data based on your current location.
+
 Tech Stack: HTML, CSS, JavaScript
 
 API:
