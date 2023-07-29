@@ -17,5 +17,5 @@ API:
 🔑 OpenWeatherMap API: Utilize the power of OpenWeatherMap to fetch real-time weather data.
 
 ## Screenshots
-[![image.png](https://urly.fi/3bHf)](https://urly.fi/3bHf)
-[![image.png](https://urly.fi/3bHg)](https://urly.fi/3bHg)
+[![image.png](https://i.ibb.co/qjz7nws/Nimet-n.png)](https://i.ibb.co/qjz7nws/Nimet-n.png)
+[![image.png](https://i.ibb.co/WP1PShZ/image.png)](https://i.ibb.co/WP1PShZ/image.png)
