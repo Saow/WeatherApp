@@ -3,6 +3,7 @@
 🌦️ A simple and user-friendly weather app that provides up-to-date weather information using the OpenWeatherMap API.
 
 Features:
+
 🌡️ Real-time Weather Data: Get current weather updates for any location around the world.
 
 🌐 International Support: Access weather information for cities worldwide.
