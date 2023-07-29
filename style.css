@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: right;
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(15, 1, 1, 0.5), rgba(139, 118, 112, 0.5));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input{
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+    background-color: #cfcbcbc4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+ }
+
+header input:focus{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+header input:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.location .city{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.location .date{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.current .temp{
+    font-size: 6rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+}
+.current .weather{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.current .high-low{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

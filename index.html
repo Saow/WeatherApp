@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script defer src="script.js"></script>
+    <script defer src="modal.js"></script>
+</head>
+<body>
+    <div class="app-wrap">
+    <header>
+        <input type="search" class="search-box" placeholder="Search for city...">
+    </header>
+    <main>
+        <section class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+        </section>
+        <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="weather"></div>
+            <div class="high-low"></div>
+        </div>
+    </main>
+    <button id="myBtn">ⓘ</button>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Weather App</h2>
+          </div>
+          <div class="modal-body">
+            <a href="https://github.com/saow" target="_blank">Github</a>
+            <br>
+            <p>© Samuel Nummela</p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
