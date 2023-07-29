@@ -1,4 +1,4 @@
-WeatherApp
+#WeatherApp
 
 🌦️ A simple and user-friendly weather app that provides up-to-date weather information using the OpenWeatherMap API.
 
