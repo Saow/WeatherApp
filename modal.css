@@ -12,6 +12,9 @@
     font-family: 'Roboto', sans-serif;
   }
 
+#myBtn:hover{
+    cursor: pointer;
+  }
 
 /* The Modal (background) */
 .modal {
