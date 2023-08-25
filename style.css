@@ -87,3 +87,29 @@ main{
     color: #ffffff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+.current .hum{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.current .wind{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.current .sunrise{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.current .sunset{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

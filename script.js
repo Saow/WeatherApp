@@ -37,7 +37,14 @@ function displayResults (weather) {
     weather_el.innerHTML = weather.weather[0].main;
 
     let hilow = document.querySelector('.high-low');
-    hilow.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    hilow.innerHTML = `🌡️${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+
+    let humidity = document.querySelector('.hum');
+    humidity.innerHTML = `🌧️${weather.main.humidity}%`;
+
+    let wind = document.querySelector('.wind');
+    wind.innerHTML = `💨${weather.wind.speed} m/s`;
+
 }
 
 function dateBuilder (d) {
